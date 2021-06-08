@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Booking Details</title>
+
+  <!--Bootstrap Links -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts links -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome links -->
+  <script src="https://kit.fontawesome.com/b855813eb8.js" crossorigin="anonymous"></script>
+
+  <!-- Local stylesheet-->
+  <link rel="stylesheet" href="generalpagestyle.css">
+
+  <!--jQuery-->
+  <script src='jquery-3.2.1.min.js'>
+    $(':radio:not(:unchecked)').attr('disabled', true);
+  </script>
+
+</head>
+
+<style media="screen">
+  .card {
+    border: none;
+    background-color: #e5e5e5;
+  }
+
+  .btn btn-light {
+    border: solid;
+  }
+
+  body {
+    background-color: #1b262c;
+  }
+</style>
+
+<body background-color:#1b262c>
+  <div class="container">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="registration.php">
+        <h1 class="heading">ApniGaadi.com</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading ">
+            <div class="card" style="width: 30rem;">
+              <div class="card-body">
+                <h3 class="card-title">Booking Details</h3>
+                <h6 class="card-subtitle mb-2 text-muted"></h6>
+                <p class="card-text">
+                <form action="book.php" method="post">
+                  <label for="Email">Confirm Email:</label>
+                  <input type="text" name="Email" class="form-control" placeholder="someone@email.com">
+
+                  <label for="Address">Address:</label>
+                  <input type="text" name="Address" class="form-control" placeholder="city,airport,station,region,district,..">
+
+                  <label for="pDate">Pickup Date:</label>
+                  <input type="date" name="pDate" class="form-control">
+
+                  <!--<label for="pTime">Pickup Time</label>
+                  <input type="time" name="pTime" class="form-control">-->
+
+
+                  <label for="Days">Number of Days</label>
+                  <input type="text" name="Days" class="form-control">
+
+                  <!--<label for="dTime">Dropoff Time</label>
+                  <input type="time" name="dTime" class="form-control">-->
+
+                  <!--<label for="cars">Car:</label>
+                  <input type="text" name="cars" class="form-control" value="Alfa Romeo Giulia" readonly>-->
+
+                  <!--<label for="cars">Choose a car:</label>
+                  <select id="cars" name="cars" class="form-control">
+                    <option value="mustang">Ford Mustang</option>
+                    <option value="a4">Audi A4</option>
+                    <option value="i8">BMW i8</option>
+                    <option value="swift">Maruti Suzuki Swift</option>
+                    <option value="alfa">Alfa Romeo Giulia</option>
+                    <option value="ford">Ford Fusion</option>
+                  </select>
+
+                  <label for="cars">How likely are you to cars us to a friend or colleague?</label><br>
+                  <input type="radio" name="cars" value="mustang">
+                  <label for="mustang">Highly Unlikely</label><br>
+                  <input type="radio" name="cars" value="i8">
+                  <label for="i8">Unlikely</label><br>
+                  <input type="radio" name="cars" value="swift">
+                  <label for="swift">Likely</label><br>
+                  <input type="radio" name="cars" value="Fusion">
+                  <label for="Fusion">Highly likely</label><br>-->
+
+                  <label for="cars">Cars:</label><br>
+                  <input type="radio" name="cars" value="Ford Mustang" disabled>
+                  <label for="mustang">Ford Mustang</label><br>
+                  <input type="radio" name="cars" value="Audi A4" disabled>
+                  <label for="mustang">Audi A4</label><br>
+                  <input type="radio" name="cars" value="BMW i8" disabled>
+                  <label for="i8">BMW i8</label><br>
+                  <input type="radio" name="cars" value="Maruti Suzuki Swift" disabled>
+                  <label for="swift">Maruti Suzuki Swift</label><br>
+                  <input type="radio" name="cars" value="Alfa Romeo Giulia" checked>
+                  <label for="i8">Alfa Romeo Giulia</label><br>
+                  <input type="radio" name="cars" value="Ford Fusion" disabled>
+                  <label for="Fusion">Ford Fusion</label><br>
+                  
+                  
+                  
+                  <label><b>* Cash on Delivery only</b></label>
+
+
+
+
+
+
+
+
+
+
+                  <br>
+
+                  <input type="submit" class="btn btn-outline-dark" />
+
+                </form>
+                </p>
+                <a href="#" class="card-link"></a>
+                <a href="#" class="card-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div id="bottom-container">
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-bottom" style="background-color: #1b262c;">
+        <div class="container">
+          <a class="navbar-brand" href="">
+            © 2020 ApniGaadi.com
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <a class="footer-link" href="https://www.facebook.com/apni.gaadi.9"><i class="fab fa-facebook-f" id="icons"></i></a>
+                  <a class="footer-link" href="https://twitter.com/ApniGaadi"><i class="fab fa-twitter" id="icons"></i></a>
+                  <a class="footer-link" href="https://www.instagram.com/apni_gaadi"><i class="fab fa-instagram" id="icons"></i></a>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+
+
+</body>
+
+</html>
