@@ -1,0 +1,40 @@
+body{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+}
+.heading{
+  font-family: 'Oswald', sans-serif;
+  size: 3rem;
+  line-height: 1.5;
+}
+.nav-link{
+  font-size: 110%;
+}
+.container{
+  line-height: 1.5;
+}
+.green-bar {
+  border-style: solid hidden hidden hidden;
+  border-color: #81b214;
+  border-width: 5px;
+  width: 5%;
+}
+ul{
+  line-height: 1.5;
+}
+.end-name{
+  position: absolute;
+  left: 75px;
+}
+.footer-link{
+  color:  black;
+  margin: 10px 30px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.footer-link:hover{
+  color: blue;
+}
+#bottom-container{
+  margin: 0 0 50px 0;
+}

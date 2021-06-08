@@ -1,0 +1,27 @@
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+.heading{
+  font-family: 'Oswald', sans-serif;
+  size: 3rem;
+  line-height: 1.5;
+}
+#navbarcolor{
+  background-color: #1b262c;
+}/*
+#bottomcontainer{
+  position: absolute;
+  top: 100px;
+}*/
+#contactus-icons{
+  font-size: 1.5rem;
+}
+.footer-link{
+  color: white;
+  margin: 10px 20px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.footer-link:hover{
+  color: yellow;
+}

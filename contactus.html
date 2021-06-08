@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Feedback Form</title>
+
+  <!--Bootstrap Links -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts links -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome links -->
+  <script src="https://kit.fontawesome.com/b855813eb8.js" crossorigin="anonymous"></script>
+
+  <!-- Local stylesheet-->
+  <link rel="stylesheet" href="generalpagestyle.css">
+</head>
+
+<style media="screen">
+  .card {
+    border: none;
+    background-color: #e5e5e5;
+  }
+
+  .btn btn-light {
+    border: solid;
+  }
+
+  body {
+    background-color: #1b262c;
+  }
+</style>
+
+<body background-color:#1b262c>
+
+  <div class="container">
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="registration.php">
+        <h1 class="heading">ApniGaadi.com</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="login.php">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <br>
+
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading ">
+            <div class="card" style="width: 30rem;">
+              <div class="card-body">
+                <h3 class="card-title">Feedback Form</h3>
+                <h6 class="card-subtitle mb-2 text-muted"></h6>
+                <p class="card-text">
+                <form action="mini.php" method="post">
+                  <label for="Name">Name:</label>
+                  <input type="text" name="Name" class="form-control" placeholder="John Doe">
+
+                  <label for="Email">Email:</label>
+                  <input type="text" name="Email" class="form-control" placeholder="someone@email.com">
+
+                  <label for="Impressions">What was your first impression when you entered the website?</label>
+                  <textarea name="Impressions" rows="8" cols="80" class="form-control"></textarea>
+
+                  <label for="Hear">How did you first hear about us?</label>
+                  <input type="text" name="Hear" value="" class="form-control">
+
+                  <label for="Missing">Is there anything missing on this page?</label>
+                  <textarea name="Missing" rows="8" cols="80" class="form-control"></textarea>
+
+                  <label for="Recommend">How likely are you to recommend us to a friend or colleague?</label><br>
+                  <input type="radio" name="Recommend" value="Highly_unlikely">
+                  <label for="Highly_unlikely">Highly Unlikely</label><br>
+                  <input type="radio" name="Recommend" value="Unlikely">
+                  <label for="Unlikely">Unlikely</label><br>
+                  <input type="radio" name="Recommend" value="Likely">
+                  <label for="Likely">Likely</label><br>
+                  <input type="radio" name="Recommend" value="Highly_likely">
+                  <label for="Highly_likely">Highly likely</label><br>
+
+                  <label for="Comments">Any other comments?</label>
+                  <textarea name="Comments" rows="8" cols="80" class="form-control"></textarea><br>
+
+                  <input type="submit" class="btn btn-outline-dark" />
+
+
+                </form>
+                </p>
+                <a href="#" class="card-link"></a>
+                <a href="#" class="card-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+    <div id="bottom-container">
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-bottom" style="background-color: #1b262c;">
+        <div class="container">
+          <a class="navbar-brand" href="">
+            © 2020 ApniGaadi.com
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <a class="footer-link" href="https://www.facebook.com/apni.gaadi.9"><i class="fab fa-facebook-f" id="icons"></i></a>
+                  <a class="footer-link" href="https://twitter.com/ApniGaadi"><i class="fab fa-twitter" id="icons"></i></a>
+                  <a class="footer-link" href="https://www.instagram.com/apni_gaadi"><i class="fab fa-instagram" id="icons"></i></a>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+
+</body>
+
+</html>

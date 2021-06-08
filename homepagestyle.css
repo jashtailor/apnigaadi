@@ -1,0 +1,58 @@
+body{
+  font-family: 'PT Sans', sans-serif;
+}
+.heading{
+  font-family: 'Oswald', sans-serif;
+  size: 3rem;
+  line-height: 1.5;
+}
+.nav-link{
+  font-size: 105%;
+}
+.panel-heading [data-toggle="collapse"]:after {
+    font-family: 'Glyphicons Halflings';
+    content: "e072"; /* "play" icon */
+    float: right;
+    color: #F58723;
+    font-size: 18px;
+    line-height: 22px;
+    /* rotate "play" icon from > (right arrow) to down arrow */
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.card{
+  background-color: #1b262c;
+  color: white;
+  border: none;
+}
+#search-box{
+  color: black;
+}
+.right-card{
+  font-size: 120%;
+  line-height: 2.5 ;
+}
+#bottom-container{
+  /*color: white;
+  width: 100%;*/
+  margin: 0 0 50px 0;
+}
+#faq{
+  color: white;
+}
+.footer-link{
+  color: white;
+  margin: 10px 20px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.footer-link:hover{
+  color: yellow;
+}
+hr{
+  border-style: solid hidden hidden hidden;
+  border-color: #e5e5e5;
+}
